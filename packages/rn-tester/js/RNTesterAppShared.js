@@ -232,7 +232,7 @@ const RNTesterApp = ({
 
   return (
     <RNTesterThemeContext.Provider value={theme}>
-      {Platform.isTV ? (
+      {Platform.isTV && activeModule == null ? (
         <View style={styles.tvNavBar}>
           <RNTesterNavBar
             screen={screen || Screens.COMPONENTS}
